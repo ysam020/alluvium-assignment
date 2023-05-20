@@ -1,5 +1,5 @@
 import { Container, Row } from "react-bootstrap";
-import "./App.css";
+import "./App.scss";
 import FeedbackForm from "./forms/FeedbackForm";
 
 function App() {

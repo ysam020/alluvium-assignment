@@ -1,0 +1,56 @@
+$primary-color: #537188;
+$secondary-color: #d32f2f;
+$background-color: #eeeeee;
+$form-header-height: 10vh;
+$form-body-height: 90vh;
+
+@mixin button-styles {
+  background-color: $secondary-color;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 20px;
+  padding: 10px 15px;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+
+.form-header {
+  height: $form-header-height;
+  background-color: $primary-color;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.form-body {
+  padding: 30px;
+  height: $form-body-height;
+  background-color: $background-color;
+
+  h5 {
+    margin: 10px 0;
+  }
+
+  .chose-file {
+    @include button-styles;
+    background-color: $primary-color !important;
+    font-size: 12px !important;
+  }
+
+  button {
+    @include button-styles;
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: $primary-color;
+  }
+}
