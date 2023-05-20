@@ -12,7 +12,10 @@ export async function addFeedback(values, file, setFile) {
   };
 
   try {
-    await axios.post(`http://localhost:9002/feedback/${email}`, formData);
+    await axios.post(
+      `https://alluvium.onrender.com//feedback/${email}`,
+      formData
+    );
     setFile("");
     alert("Feedback added successfully");
   } catch (error) {
