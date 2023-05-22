@@ -13,7 +13,7 @@ export async function addFeedback(values, file, setFile) {
 
   try {
     await axios.post(
-      `https://alluvium.onrender.com//feedback/${email}`,
+      `https://alluvium.onrender.com/feedback/${email}`,
       formData
     );
     setFile("");
